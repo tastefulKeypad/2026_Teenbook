@@ -6,11 +6,15 @@ import requests
 QUERY = """
 SELECT ?item ?itemLabel ?description WHERE {
   VALUES ?item {
-    # Укажите здесь свои ссылки на сущности wikidata, например, чтобы получить статью о подростках:
-    # wd:Q131774      # adolescence (подросток) - опционально подпишите на какую сущность эта ссылка!
-    wd:??????
-    wd:??????
-    wd:??????
+    # 8 ключевых концепций раздела household_pets:
+    wd:Q1492760   # Подросток (teenager)
+    wd:Q2421951   # Забота (care)
+    wd:Q144       # Собака (dog)
+    wd:Q42982     # Аллергия (allergy)
+    wd:Q202883    # Ветеринар (veterinarian)
+    wd:Q1026040   # Горе (grief)
+    wd:Q1411287   # Приют для животных (animal shelter)
+    wd:Q10566551  # Безопасность (safety)
   }
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "ru,en". }
