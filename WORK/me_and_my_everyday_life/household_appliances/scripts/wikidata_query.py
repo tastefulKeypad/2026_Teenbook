@@ -6,11 +6,14 @@ import requests
 QUERY = """
 SELECT ?item ?itemLabel ?description WHERE {
   VALUES ?item {
-    # Укажите здесь свои ссылки на сущности wikidata, например, чтобы получить статью о подростках:
-    # wd:Q131774      # adolescence (подросток) - опционально подпишите на какую сущность эта ссылка!
-    wd:??????
-    wd:??????
-    wd:??????
+    wd:Q2144962 #Ремонт
+    wd:Q2578402 #Инструменты 
+    wd:Q212920 #Приборы 
+    wd:Q60971774 #Правила безопасности 
+    wd:Q12725 #Электричество 
+    wd:Q2251595 #Осторожность
+    wd:Q3236990 #Самостоятельность 
+    wd:Q80994 #Взрослые 
   }
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "ru,en". }
