@@ -8,9 +8,16 @@ SELECT ?item ?itemLabel ?description WHERE {
   VALUES ?item {
     # Укажите здесь свои ссылки на сущности wikidata, например, чтобы получить статью о подростках:
     # wd:Q131774      # adolescence (подросток) - опционально подпишите на какую сущность эта ссылка!
-    wd:??????
-    wd:??????
-    wd:??????
+    wd:Q4368245
+    wd:Q8436
+    wd:Lexeme:L136354
+    wd:Q6316865 
+    wd:Lexeme:L106803
+    wd:Q644302 
+    wd:Q2421951 
+    wd:Q1079196 
+    wd:Q205961 
+    wd:Q3236990  
   }
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "ru,en". }
